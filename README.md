@@ -11,12 +11,13 @@ import matplotlib.pyplot as plt
 data = pd.read_csv("insurance.csv")
 data.head()
 ```
-![head](https://github.com/AnnBlessy/Health-insurance-analysis-1/assets/119477835/b6adf397-685a-43bc-98a2-c12a482dd2df)
+![head](https://github.com/AnnBlessy/Health-insurance-analysis-1/assets/119477835/e9be24b3-8c6d-49b2-9849-de918a4d6ba7)
 
 ```
 data.tail()
 ```
-![tail](https://github.com/AnnBlessy/Health-insurance-analysis-1/assets/119477835/99080ed1-0a70-4f40-ae3f-dd9fbdc39b0e)
+![tail](https://github.com/AnnBlessy/Health-insurance-analysis-1/assets/119477835/de2c3efc-46af-4332-9247-21e1ffd125f3)
+
 
 ## Dataset info
 ```
@@ -28,14 +29,15 @@ data.info()
 ```
 data.isnull().sum()
 ```
-![nullcheck](https://github.com/AnnBlessy/Health-insurance-analysis-1/assets/119477835/812f33af-acf5-4067-b87d-701ffc201d0d)
+![nullcheck](https://github.com/AnnBlessy/Health-insurance-analysis-1/assets/119477835/8aae47c5-b1f2-469b-a46f-0b1fd54e72a8)
 
 ```
 df = data.copy()
 df = df.drop(["children","region"],axis = 1)
 df.head()
 ```
-![new](https://github.com/AnnBlessy/Health-insurance-analysis-1/assets/119477835/9392242f-56a2-4334-849d-bc31fd660f20)
+![new](https://github.com/AnnBlessy/Health-insurance-analysis-1/assets/119477835/d0a6af06-74b4-4f7c-b471-6045cb9853da)
+
 
 ## Conversion of object type variables into categorical variables or numerical format 
 
@@ -46,7 +48,7 @@ df["sex"] = le.fit_transform(df["sex"])
 df["smoker"] = le.fit_transform(df["smoker"])
 df
 ```
-![d1](https://github.com/AnnBlessy/Health-insurance-analysis-1/assets/119477835/3b34e2fd-3ef0-4e58-a233-1c8bf11fa5fa)
+![d1](https://github.com/AnnBlessy/Health-insurance-analysis-1/assets/119477835/4d39ab67-0401-436c-ae2e-9c9b28734287)
 ![d2](https://github.com/AnnBlessy/Health-insurance-analysis-1/assets/119477835/1ae3d65a-b9ec-42ca-8b7d-dc6d803b652b)
 ![d3](https://github.com/AnnBlessy/Health-insurance-analysis-1/assets/119477835/45da87ce-ee21-4fd4-ad81-fa90a6b6d28f)
 
